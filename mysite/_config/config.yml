@@ -1,0 +1,23 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'simple'
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
+Debug:
+  friendly_error_httpcode: true
+
+i18n:
+  date_format: 'MM-dd-YYYY'
+
+DateField:
+  default_config:
+    'showcalendar': true
